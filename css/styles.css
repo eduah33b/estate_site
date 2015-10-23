@@ -244,7 +244,9 @@ html, body {
   position: relative;
   top: 0px;
   left: 0px;
-  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  min-height: 249px;
   width: 100%;
 }
 .carusole>div {
@@ -253,7 +255,7 @@ html, body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  padding: 10px 10px;
+  padding: 0px 20px;
   overflow: hidden;
 }
 .carusole>div:not(.on_now) {
@@ -262,4 +264,16 @@ html, body {
 
 .mdl-button {
   text-transform: capitalize;
+}
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .carusole {
+    min-height: 267px;
+  }
+}
+
+@media (max-width: 479px) { 
+  .carusole {
+    min-height: 200px;
+  }
 }
